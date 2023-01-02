@@ -1,0 +1,2 @@
+from patients.serializers.appointment import AppointmentSerializer
+from patients.serializers.patient import PatientSerializer

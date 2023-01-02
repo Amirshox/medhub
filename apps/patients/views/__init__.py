@@ -1,0 +1,2 @@
+from patients.views.appointment import AppointmentAPIView, AppointmentsByPatientAPIView
+from patients.views.patient import PatientListAPIView, PatientDetailAPIView
