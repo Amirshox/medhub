@@ -14,7 +14,7 @@
 
 ## You can log in through only through the doctor account
 
-### Aziz Doctor:
+### Aziz Therapist Doctor
 
     `login: AA1112233` 
 
