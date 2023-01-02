@@ -28,6 +28,6 @@
 #### Get patient form: [http://127.0.0.1:8000/api/v1/doctors/{patient_id}/appointment-form/](http://127.0.0.1:8000/api/v1/doctors/2/appointment-form/)
 #### form is selected depending on age
 
-#### Create appointment: [http://127.0.0.1:8000/api/v1/patients/appointments/](http://127.0.0.1:8000/api/v1/patients/appointments/)
+#### Create an appointment based on the form you received earlier: [http://127.0.0.1:8000/api/v1/patients/appointments/](http://127.0.0.1:8000/api/v1/patients/appointments/) (POST)
 
 #### List of appointments for patient: http://127.0.0.1:8000/api/v1/patients/2/appointments/
