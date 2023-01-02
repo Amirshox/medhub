@@ -1,0 +1,242 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$5c1WEN6kBkhUztKo1iYXoU$ms8hI1P4fOmoq9xmjVqg9zouqeL708OdTE2AKBfyBTc=",
+      "last_login": "2023-01-02T20:06:16.075Z",
+      "is_superuser": true,
+      "first_name": "Doctor Aziz",
+      "last_name": "X",
+      "email": "tomasdoctor@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-01-02T19:39:16Z",
+      "passport_id": "AA1112233",
+      "phone_number": "998934748998",
+      "birth_date": "2001-11-19",
+      "gender": "m",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$0k1liPRfFeaZ2RDQPLWsJe$NcU9oCRFJxhpH2DQnfL9pSMZ45UGoCx5uFfcjUTJ6oU=",
+      "last_login": "2023-01-02T19:41:15Z",
+      "is_superuser": false,
+      "first_name": "John",
+      "last_name": "Patient 1",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-02T19:40:51Z",
+      "passport_id": "AB1234567",
+      "phone_number": "",
+      "birth_date": "1980-11-11",
+      "gender": "m",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$OCwU9AQWUSpxvEOX3ucKWv$wDfO5pqS2KF17lVawdH8pNBUWJebIySV89X6pEgDsdU=",
+      "last_login": "2023-01-02T19:41:59Z",
+      "is_superuser": false,
+      "first_name": "Harry",
+      "last_name": "Patient 2",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-02T19:41:42Z",
+      "passport_id": "AC1234567",
+      "phone_number": "",
+      "birth_date": "2000-11-11",
+      "gender": "m",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$vQ0ZfKtwkcC1OFFbztSreK$8D4cvVhrJXR11tE1lg69uwgwVjljDoFZUwotigdk/9M=",
+      "last_login": "2023-01-02T19:43:34Z",
+      "is_superuser": false,
+      "first_name": "Angela",
+      "last_name": "Patient 3",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-02T19:42:21Z",
+      "passport_id": "AD1234567",
+      "phone_number": "998991234567",
+      "birth_date": "2010-11-11",
+      "gender": "f",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "patients.appointment",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-01-02T19:56:45.883Z",
+      "updated_at": "2023-01-02T19:56:45.889Z",
+      "is_active": true,
+      "parent": null,
+      "patient": 1,
+      "doctor": 1,
+      "symptoms": {
+        "pressure": 120,
+        "last_activity": "2022-11-11",
+        "Болит ли колено?": "Yes"
+      },
+      "description": "string",
+      "date": "2023-01-02T19:53:16.271Z"
+    }
+  },
+  {
+    "model": "patients.appointment",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-01-02T19:57:30.329Z",
+      "updated_at": "2023-01-02T19:57:30.332Z",
+      "is_active": true,
+      "parent": null,
+      "patient": 1,
+      "doctor": 1,
+      "symptoms": {
+        "pressure": 140,
+        "last_activity": "2022-11-11",
+        "Болит ли колено?": "Yes"
+      },
+      "description": "string",
+      "date": "2023-02-02T19:53:16.271Z"
+    }
+  },
+  {
+    "model": "patients.appointment",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-01-02T20:10:29.685Z",
+      "updated_at": "2023-01-02T20:10:29.689Z",
+      "is_active": true,
+      "parent": null,
+      "patient": 2,
+      "doctor": 1,
+      "symptoms": {
+        "temperature": 35,
+        "Занимаешься ли спортом?": "Yes of course",
+        "Посещают ли тебя головные боли?": "Nope",
+        "Употребляешь никотин или алкоголь?": "Nope"
+      },
+      "description": "string",
+      "date": "2023-01-02T20:09:25.361Z"
+    }
+  },
+  {
+    "model": "patients.patient",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-01-02T19:44:11.977Z",
+      "updated_at": "2023-01-02T19:44:11.977Z",
+      "is_active": true,
+      "user": 2,
+      "address": "G32"
+    }
+  },
+  {
+    "model": "patients.patient",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-01-02T19:44:19.455Z",
+      "updated_at": "2023-01-02T19:44:19.455Z",
+      "is_active": true,
+      "user": 3,
+      "address": "B32"
+    }
+  },
+  {
+    "model": "patients.patient",
+    "pk": 3,
+    "fields": {
+      "created_at": "2023-01-02T19:44:29.518Z",
+      "updated_at": "2023-01-02T19:44:29.518Z",
+      "is_active": true,
+      "user": 4,
+      "address": "L32"
+    }
+  },
+  {
+    "model": "doctors.doctor",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-01-02T19:50:21.941Z",
+      "updated_at": "2023-01-02T19:50:21.941Z",
+      "is_active": true,
+      "user": 1,
+      "specialization": 1,
+      "about": "lorem impsum",
+      "is_available": true
+    }
+  },
+  {
+    "model": "doctors.specialization",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-01-02T19:49:44.188Z",
+      "updated_at": "2023-01-02T19:49:44.188Z",
+      "is_active": true,
+      "name": "therapist",
+      "description": "lorem impsum",
+      "forms": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "doctors.diseaseform",
+    "pk": 1,
+    "fields": {
+      "created_at": "2023-01-02T19:47:47.506Z",
+      "updated_at": "2023-01-02T19:47:47.506Z",
+      "is_active": true,
+      "number": "01",
+      "questions": {
+        "1": "Посещают ли тебя головные боли?",
+        "2": "Употребляешь никотин или алкоголь?",
+        "3": "Занимаешься ли спортом?",
+        "temperature": ""
+      },
+      "required_question_fields": "[\"temperature\"]",
+      "from_age": 18,
+      "to_age": 30
+    }
+  },
+  {
+    "model": "doctors.diseaseform",
+    "pk": 2,
+    "fields": {
+      "created_at": "2023-01-02T19:49:10.187Z",
+      "updated_at": "2023-01-02T19:56:33.765Z",
+      "is_active": true,
+      "number": "02",
+      "questions": {
+        "1": "Болит ли колено?",
+        "pressure": "",
+        "last_activity": ""
+      },
+      "required_question_fields": "[\"pressure\", \"last_activity\"]",
+      "from_age": 30,
+      "to_age": 150
+    }
+  }
+]
